@@ -1,0 +1,31 @@
+{
+  "name": "react-experiment-boilerplate",
+  "version": "1.0.0",
+  "description": "This is a React experiment.",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "postinstall": "result=${PWD##*/}; if [ $result != 'react-experiment-boilerplate' ]; then rimraf .git; fi",
+    "start": "webpack-dev-server --inline --hot --content-base dist/"
+  },
+  "contributors": [
+    {
+      "name": "Josh Mock",
+      "email": "josh@joshmock.com"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/JoshMock/react-expiriment-boilerplate.git"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "babel-core": "^6.13.2",
+    "babel-loader": "^6.2.5",
+    "babel-preset-es2015": "^6.13.2",
+    "babel-preset-react": "^6.11.1",
+    "html-webpack-plugin": "^2.22.0",
+    "rimraf": "^2.5.4",
+    "webpack": "^1.13.1",
+    "webpack-dev-server": "^1.14.1"
+  }
+}
